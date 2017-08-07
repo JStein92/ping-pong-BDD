@@ -1,0 +1,14 @@
+@{
+ Layout = "_Layout";
+}
+
+<div class="jumbotron">
+  <h1>Here's PingPong from 1 to @Model.GetNumber()!</h1>
+</div>
+
+@foreach(var n in Model.PingPong())
+{
+  <p>@n</p>
+}
+
+<a href="/">Play again</a>
